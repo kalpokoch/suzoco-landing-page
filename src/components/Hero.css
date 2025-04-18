@@ -1,0 +1,83 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    /* padding-top: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-content {
+    display: flex;
+    gap: 80px;
+    width: 100%;
+  }
+  
+  
+  .hero-left {
+    max-width: 50%;
+  }
+  
+  .hero-left h1 {
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 720;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  
+  .hero-left h2 {
+    font-size: 20px;
+    color: #4a5568;
+    margin-bottom: 12px;
+  }
+  
+  .hero-left p {
+    color: #4a5568;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+  
+  .hero-right {
+    margin-top: 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .logo-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    background-color: white;
+    border-radius: 1px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto; /* centers the tile horizontally */
+  }
+  
+  .logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+  }
+  
+
+  .logos img {
+    max-width: 200px; /* ← Adjust based on your needs */
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .color-bar {
+    height: 4px;
+    width: 40%;
+    background: linear-gradient(to right, #2A9D8F, #F4A261, #1A365D);
+    border-radius: 2px;
+    margin-top: 10px;
+  }
+  
+  
