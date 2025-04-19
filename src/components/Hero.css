@@ -38,7 +38,7 @@
   }
   
   .hero-right {
-    margin-top: 80px;
+    margin-top: 150px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -52,7 +52,7 @@
     background-color: white;
     border-radius: 1px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    max-width: 700px;
     height: auto;
     margin: 0 auto; /* centers the tile horizontally */
   }
@@ -67,7 +67,7 @@
   
 
   .logos img {
-    max-width: 200px; /* ← Adjust based on your needs */
+    max-width: 150px; /* ← Adjust based on your needs */
     height: auto;
     object-fit: contain;
   }
