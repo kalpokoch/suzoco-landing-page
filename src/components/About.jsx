@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-
+import check from '../assets/checkmark.png';
 function About() {
   return (
     <section className="about-section" id="about">
@@ -35,7 +35,7 @@ function About() {
               <ul>
                 <li>
                     <div className='list-title'>
-                    <img src="src\assets\checkmark.png" alt="check" className='list-icon' />
+                    <img src={check} alt="check" className='list-icon' />
                     <strong>Integrated Ecosystem:</strong>
                     </div>
                     <p className='list-desc'>
@@ -44,7 +44,7 @@ function About() {
                 </li>
                 <li>
                     <div className='list-title'>
-                        <img src="src\assets\checkmark.png" alt="check" className='list-icon' />
+                        <img src={check} alt="check" className='list-icon' />
                         <strong>Local Focus, Global Standards:</strong>
                     </div>
                     <p className='list-desc'>
@@ -53,7 +53,7 @@ function About() {
                 </li>
                 <li>
                     <div className='list-title'>
-                        <img src="src\assets\checkmark.png" alt="check" className='list-icon' />
+                        <img src={check} alt="check" className='list-icon' />
                         <strong>Support at Every Stage:</strong>
                     </div>
                     <p className='list-desc'>

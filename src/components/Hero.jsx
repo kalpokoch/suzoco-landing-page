@@ -1,4 +1,7 @@
 import React from 'react';
+import zynco from '../assets/zynco.png';
+import zcs from '../assets/zcsasia.png';
+import setu from '../assets/setu.png';
 import './Hero.css';
 
 function Hero() {
@@ -19,9 +22,9 @@ function Hero() {
             <div className="hero-right">
                 <div className="logo-tile">
                     <div className="logos">
-                        <img src="src/assets/zynco.png" alt="Zynco" />
-                        <img src="src/assets/setu.png" alt="Setu Upskills" />
-                        <img src="src/assets/zcsasia.png" alt="ZCS" />
+                        <img src={zynco} alt="Zynco" />
+                        <img src={setu} alt="Setu Upskills" />
+                        <img src={zcs} alt="ZCS" />
                     </div>
                     <div className="color-bar"></div>
                 </div>

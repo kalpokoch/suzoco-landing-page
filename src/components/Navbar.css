@@ -5,17 +5,23 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.05); optional subtle divider */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent;
 }
 
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
 .navbar .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }
+
 
 .logo {
   height: 48px;
