@@ -4,13 +4,14 @@
   }
   
   .verticals-section h2 {
-    font-size: 36px;
-    color: #1A365D;
-    margin-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
   
   .verticals-section .subtitle {
-    font-size: 18px;
+    font-size: 20px;
     color: #444;
     margin-bottom: 50px;
     max-width: 700px;

@@ -42,12 +42,14 @@
 }
 
 .nav-links li a:hover {
-  color: #2A9D8F;
+  background-color: white;
+  transition: ease-in-out;
+  color: #2A9D8F !important;
 }
 
-.nav-links li button {
+.contact-button {
+  color: white !important;
   background-color: #1A365D;
-  color: white;
   padding: 10px 20px;
   border-radius: 24px;
   font-weight: bold;

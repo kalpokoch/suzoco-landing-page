@@ -17,12 +17,14 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
+        <a href="">
         <img src={logo} alt="Suzoco Logo" className="logo" />
+        </a>
         <ul className="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#verticals">Our Verticals</a></li>
-          <li><a href="#why">Why Choose Us</a></li>
-          <li><button>Contact Us</button></li>
+          <li><a href="#why-choose-us">Why Choose Us</a></li>
+          <li><a href="#contact-us" className='contact-button'>Contact Us</a></li>
         </ul>
       </div>
     </nav>
