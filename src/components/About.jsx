@@ -3,7 +3,10 @@ import './About.css';
 import check from '../assets/checkmark.png';
 function About() {
   return (
-    <section className="about-section" id="about">
+    <section 
+      className="about-section"
+      id="about"
+    >
       <div className="container">
         <h2 className="about-heading">About Suzoco</h2>
         <p className="about-subheading">

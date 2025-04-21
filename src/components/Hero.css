@@ -45,27 +45,29 @@
   }
   
   .logo-tile {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px;
+    padding: 32px;
     background-color: white;
     border-radius: 1px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     max-width: 700px;
     height: auto;
     margin: 0 auto; /* centers the tile horizontally */
+    cursor: pointer;
   }
-  
+
   .logos {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     gap: 16px;
-  }
+  } 
   
-
   .logos img {
     max-width: 150px; /* ← Adjust based on your needs */
     height: auto;
@@ -79,5 +81,63 @@
     border-radius: 2px;
     margin-top: 10px;
   }
+
+  .logo-wrapper{
+    /* border: solid 10px black; */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 550px;
+    height: 174px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    background: linear-gradient(#2A9D8F, #F4A261, #1A365D);
+    opacity: 0;
+    transition: opacity 300ms;
+    animation: logo_rotation 8000ms infinite linear;
+    animation-play-state:paused;
+  }
+
+  .logo-wrapper:hover::before {
+    opacity: 1;
+    animation-play-state: running;
+  }
+
+  .logo-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+  }
+
+  @keyframes logo_rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards;
+  }
   
-  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+   */

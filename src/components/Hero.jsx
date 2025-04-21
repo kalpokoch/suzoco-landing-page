@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import zynco from '../assets/zynco.png';
 import zcs from '../assets/zcsasia.png';
 import setu from '../assets/setu.png';
@@ -20,14 +23,18 @@ function Hero() {
             </div>
 
             <div className="hero-right">
-                <div className="logo-tile">
-                    <div className="logos">
-                        <img src={zynco} alt="Zynco" />
-                        <img src={setu} alt="Setu Upskills" />
-                        <img src={zcs} alt="ZCS" />
+                <a href="#verticals">
+                    <div className='logo-wrapper'>
+                        <div className="logo-tile">
+                            <div className="logos">
+                                <img src={zynco} alt="Zynco" />
+                                <img src={setu} alt="Setu Upskills" />
+                                <img src={zcs} alt="ZCS" />
+                            </div>
+                            <div className="color-bar"></div>
+                        </div>
                     </div>
-                    <div className="color-bar"></div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
