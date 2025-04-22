@@ -42,7 +42,7 @@
 }
 
 .nav-links li a:hover {
-  background-color: white;
+  /* background-color: white; */
   transition: ease-in-out;
   color: #2A9D8F !important;
 }

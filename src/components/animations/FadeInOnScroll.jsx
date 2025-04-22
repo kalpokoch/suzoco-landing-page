@@ -10,7 +10,7 @@ const FadeInOnScroll = ({
 }) => {
   const ref = useRef(null);
   const scrollDirection = useScrollDirection();
-  const isInView = useInView(ref, { amount: 0.3, once: false });
+  const isInView = useInView(ref, { amount: 0.2, once: false });
 
   const [hasAnimated, setHasAnimated] = useState(false);
 
