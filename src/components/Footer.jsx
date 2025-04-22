@@ -22,18 +22,18 @@ function Footer() {
 
           <div className="footer-column">
             <ul>
-              <li>Zynco</li>
-              <li>Setu Upskills</li>
-              <li>ZCS Asia</li>
+              <li><a href="#verticals">Zynco</a></li>
+              <li><a href="#verticals">Setu Upskills</a></li>
+              <li><a href="#verticals">ZCS Asia</a></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <ul>
-              <li>About Us</li>
-              <li>Our Verticals</li>
-              <li>Why Choose Us</li>
-              <li>Contact Us</li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#verticals">Our Verticals</a></li>
+              <li><a href="#why-choose-us">Why Choose Us</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
             </ul>
           </div>
 

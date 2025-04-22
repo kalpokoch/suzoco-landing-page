@@ -30,11 +30,13 @@
     display: flex;
     flex-direction: column;
     background: white;
+    border: solid white;
     padding: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     width: 365px;
     height: 500px;
     box-sizing: border-box;
+    overflow: visible;
   }
   
   .card-header {
@@ -134,4 +136,13 @@
 
   .usp span{
     margin-left: 4px;
+  }
+
+  .vertical-card:hover{
+    border-color: #008bf8 !important;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    transform: translate(-0,-1px);
+    transition:ease;
+    opacity: 1;
+    cursor: pointer;
   }

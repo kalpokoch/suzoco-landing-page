@@ -8,10 +8,18 @@ import setu from '../assets/setu.png';
 import './Hero.css';
 
 function Hero() {
+    useEffect(() =>{
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out',
+            offset:20
+        });
+    },[]);
   return (
     <section className="hero grid-bg">
         <div className="container hero-content">
-            <div className="hero-left">
+            <div className="hero-left" data-aos="fade-up" data-aos-delay="50">
                 <h1>EMPOWERING<br />BUSINESSES.<br />ENABLING<br />SUCCESS.</h1>
                 <h2>A future-ready business ecosystem for growth</h2>
                 <p>
@@ -22,7 +30,7 @@ function Hero() {
                 <button>Explore Our Ecosystem</button>
             </div>
 
-            <div className="hero-right">
+            <div className="hero-right" data-aos="fade-up" data-aos-delay="200">
                 <a href="#verticals">
                     <div className='logo-wrapper'>
                         <div className="logo-tile">

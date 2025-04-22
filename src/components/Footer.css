@@ -35,14 +35,17 @@
   }
   
   .footer-column ul li {
+    font-family:Roboto;
     margin-bottom: 10px;
   }
   
   .tagline {
+    font-family:'Open Sans';
     font-size: 20px;
     line-height: 1.5;
     padding-bottom: 20px;
   }
+
   .social-icons a {
     margin-right: 30px;
     color: #ffffff;
