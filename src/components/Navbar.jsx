@@ -19,21 +19,41 @@ function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
+  // Close menu when clicking outside
+  useEffect(() => {
+    if (menuOpen) {
+      const closeMenu = () => setMenuOpen(false);
+      document.addEventListener('click', closeMenu);
+      return () => document.removeEventListener('click', closeMenu);
+    }
+  }, [menuOpen]);
+
+  // Prevent menu from closing when clicking inside it
+  const handleMenuClick = (e) => {
+    e.stopPropagation();
+  };
+
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <a href="#">
+        <a href="#" className="logo-container">
           <img src={logo} alt="Suzoco Logo" className="logo" />
         </a>
 
-        <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <li><a href="#about">About</a></li>
-          <li><a href="#verticals">Our Verticals</a></li>
-          <li><a href="#why-choose-us">Why Choose Us</a></li>
-          <li><a href="#contact-us" className='contact-button'>Contact Us</a></li>
+        <div 
+          className={`nav-links ${menuOpen ? 'open' : ''}`} 
+          onClick={handleMenuClick}
+        >
+          <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
+          <li><a href="#verticals" onClick={() => setMenuOpen(false)}>Our Verticals</a></li>
+          <li><a href="#why-choose-us" onClick={() => setMenuOpen(false)}>Why Choose Us</a></li>
+          <li><a href="#contact-us" className='contact-button' onClick={() => setMenuOpen(false)}>Contact Us</a></li>
         </div>
 
-        <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={(e) => {
+          e.stopPropagation();
+          toggleMenu();
+        }}>
           <span></span>
           <span></span>
           <span></span>

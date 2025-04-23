@@ -23,9 +23,9 @@ function Hero() {
                 <h1>EMPOWERING<br />BUSINESSES.<br />ENABLING<br />SUCCESS.</h1>
                 <h2>A future-ready business ecosystem for growth</h2>
                 <p>
-                Suzoco Group integrates marketplace solutions, training, and
-                digital transformation services to create a holistic support system
-                for businesses.
+                    Suzoco Group integrates marketplace solutions, training, and
+                    digital transformation services to create a holistic support system
+                    for businesses.
                 </p>
                 <button>Explore Our Ecosystem</button>
             </div>
