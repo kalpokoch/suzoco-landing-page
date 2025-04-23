@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { MapPinHouse, Mails, PhoneIncoming } from 'lucide-react';
 import FadeInOnScroll from './animations/FadeInOnScroll';
 import './ContactUs.css';
 
@@ -33,15 +34,15 @@ const ContactUs = () => {
             <p>Have questions about how Suzoco can help your business grow?</p>
 
               <div className='contact-details'>
-                  <h5>📍 Address:</h5> 
+                  <h5> <MapPinHouse/> Address:</h5> 
                   <p>Kokrajhar, Assam, India</p>
               </div>
             <div className='contact-details'>
-              <h5>✉️ Email:</h5>
+              <h5> <Mails/> Email:</h5>
                   <p>info@suzoco.com</p>
               </div>
             <div className='contact-details'>
-              <h5>📞 Phone:</h5>
+              <h5> <PhoneIncoming/> Phone:</h5>
                   <p>+91 12345 67890</p>
               </div>
 
