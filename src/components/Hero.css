@@ -99,10 +99,10 @@
     width: 700px;
     height: 100%;
     background: linear-gradient(#2A9D8F, #F4A261, #1A365D);
-    opacity: 0;
+    opacity: 1;
     transition: opacity 300ms;
     animation: logo_rotation 8000ms infinite linear;
-    animation-play-state:paused;
+    animation-play-state:running;
   }
 
   .logo-wrapper:hover::before {

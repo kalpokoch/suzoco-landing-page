@@ -61,7 +61,8 @@
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   }
   .ecosystem-card h4{
-    font-size: 20px;
+    display: flex;
+    font-size: 23px;
     padding-bottom: 20px;
   }
   .ecosystem-card p{
@@ -88,6 +89,8 @@
   }
 
   .benefit h5{
+    display: flex;
+    align-items: center;
     font-size: 20px;
     padding-bottom: 10px;
   }
