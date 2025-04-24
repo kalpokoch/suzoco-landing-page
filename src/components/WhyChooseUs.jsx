@@ -18,7 +18,7 @@ function WhyChooseUs(){
             <div className="ecosystem-box">
               <div className="ecosystem-header">
                   <div className="suzoco-logo">
-                  <img src={suzoco} alt="Suzoco Logo" className="ecosystem-logo" />
+                  {/* <img src={suzoco} alt="Suzoco Logo" className="ecosystem-logo" /> */}
                   </div>
                 <h3>The Suzoco Ecosystem</h3>
                 <p>

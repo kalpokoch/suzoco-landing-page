@@ -9,6 +9,7 @@
     /* width: 90%; */
     max-width: 1200px;
     margin: 0 auto;
+    /* padding: 0 20px; */
   }
   
   .footer-logo {
@@ -82,3 +83,56 @@
     color: #cccccc;
   }
   
+  /* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .footer-column {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column ul {
+    margin-bottom: 15px;
+  }
+  
+  .social-icons {
+    justify-content: flex-start;
+    margin-bottom: 25px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .tagline {
+    font-size: 18px;
+  }
+  
+  .social-icons a {
+    margin-right: 20px;
+    font-size: 24px;
+  }
+  
+  .footer-links a {
+    margin: 5px;
+  }
+}

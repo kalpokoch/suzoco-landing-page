@@ -54,10 +54,10 @@
 }
 
 .hero-right {
+  /* max-width: 350px; */
   margin-top: 150px;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .logo-tile {
@@ -163,13 +163,20 @@
       font-size: 3rem;
   }
   
-  .logo-wrapper {
-      width: 400px;
-      height: 150px;
+  .hero-right{
+    /* max-width: 300px; */
   }
-  
+  .logo-wrapper {
+      width: auto;
+      height: 139px;
+  }
+  .logo-tile{
+    justify-content: auto;
+    width: 350px;
+  }
   .logos img {
-      max-width: 120px;
+    align-items: center;
+    max-width: 95px;
   }
 }
 
@@ -191,6 +198,7 @@
   }
   
   .hero-right {
+    justify-content: center;
       margin-top: 40px;
       width: 100%;
   }
@@ -201,7 +209,8 @@
   }
   
   .logo-tile {
-      padding: 20px;
+    /* justify-content: center; */
+      padding: auto;
   }
 }
 
@@ -223,8 +232,12 @@
       max-width: 140px;
   }
   
+  .hero-right{
+    margin-left: 22px;
+  }
   .logo-wrapper {
       height: auto;
+      padding: 1px;
   }
   
   .logo-wrapper::before {
@@ -235,5 +248,15 @@
 @media (max-width: 400px) {
   .hero-left h1 {
       font-size: 1.8rem;
+  }
+
+  .hero-right{
+    /* border: solid; */
+    margin-right: 13px;
+  }
+  .logo-wrapper{
+    align-items: center;
+    width: 351px;
+    height: 283px;
   }
 }
