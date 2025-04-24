@@ -22,8 +22,8 @@ function WhyChooseUs(){
                   </div>
                 <h3>The Suzoco Ecosystem</h3>
                 <p>
-                  Our three business verticals are designed to complement each<br></br>
-                  other,creating a seamless ecosystem that supports businesses<br></br>
+                  Our three business verticals are designed to complement each
+                  other,creating a seamless ecosystem that supports businesses
                   through every stage of growth.
                 </p>
               </div>
