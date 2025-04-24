@@ -11,7 +11,7 @@ function WhyChooseUs(){
           <div className="container">
             <h2>Why Choose Suzoco</h2>
             <p className="subtitle">
-              Our integrated approach sets us apart, creating a synergy that maximizes <br />
+              Our integrated approach sets us apart, creating a synergy that maximizes
               opportunities for growth and success.
             </p>
       

@@ -14,7 +14,6 @@ function About() {
             <h2 className="about-heading">About Suzoco</h2>
             <p className="about-subheading">
               At Suzoco, we believe in creating a comprehensive ecosystem that empowers
-              <br />
               businesses at every stage of their journey.
             </p>
 
