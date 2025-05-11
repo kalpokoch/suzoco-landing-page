@@ -114,7 +114,7 @@
   
   .vertical-card ul li::before {
     content: '✔';
-    position: absolute;
+    position:absolute;
     left: 0;
     color: #26a69a;
     font-size: 14px;
