@@ -6,6 +6,8 @@ export default defineConfig({
   plugins: [react()],
   base: '/suzoco-landing-page/',
   server: {
-    allowedHosts: ['comic-honestly-filly.ngrok-free.app'],
-  },
+    host: '::',
+    port: 5000,
+    allowedHosts: 'all'
+    }
 })
