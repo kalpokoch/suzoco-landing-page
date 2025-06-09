@@ -113,13 +113,13 @@ const ContactUs = () => {
             <div className="socials">
               <span>Connect with Us</span>
               <div className='icon-links'>
-                <a href="#" className='social-icon'>
+                {/* <a href="#" className='social-icon'>
                   <FontAwesomeIcon icon={faFacebookF}/>
-                </a>
-                <a href="#" className='social-icon'>
+                </a> */}
+                <a href="https://www.instagram.com/suzocoservices?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className='social-icon'>
                   <FontAwesomeIcon icon={faInstagram}/>
                 </a>
-                <a href="#" className='social-icon'>
+                <a href="https://www.linkedin.com/company/suzoco-services/posts/?feedView=all" className='social-icon'>
                   <FontAwesomeIcon icon={faLinkedinIn}/>
                 </a>
               </div>

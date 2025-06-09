@@ -14,9 +14,9 @@ function Footer() {
           <div className="footer-column">
             <p className="tagline">A future-ready business<br />ecosystem for growth and success.</p>
             <div className="social-icons">
-              <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
-              <a href="#"><FontAwesomeIcon icon={faLinkedinIn} /></a>
-              <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+              {/* <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a> */}
+              <a href="https://www.linkedin.com/company/suzoco-services/posts/?feedView=all"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+              <a href="https://www.instagram.com/suzocoservices?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FontAwesomeIcon icon={faInstagram} /></a>
             </div>
           </div>
 
