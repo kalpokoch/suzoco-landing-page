@@ -221,32 +221,41 @@
   }
   
   .logo-wrapper {
-    width: 480px !important;
-    max-width: 315px !important;
-    height: 70px !important;
+    width: 440px !important;
+    max-width: 345px !important;
+    height: 100% !important;
 
 }
   .logo-tile {
-      width: 99%;
+      width: 100%;
       padding: 1px !important;
   }
   .logos {
     width: 100% !important;
-    height: auto !important;
-    gap: 30px !important;
+    height: 100% !important;
+    gap: 10px !important;
     display: flex !important;
     flex-wrap: wrap !important;
     flex-direction: row !important;
     justify-content: center !important;
   }
   .logos img {
+    padding-top: 4%;
     display: block;
-    width: 80px !important;
-    height: 50px;
+    width: 101px !important;
+    height: 50px !important;
     object-fit: contain;
   }
+  .logos img:nth-child(2){
+    /* width: 100% !important; */
+    height: 1% !important;
+    padding-left: 2px;
+    padding-right: 2px;
+    overflow: hidden;
+  }
   .color-bar{
-    width: 20%;
+    overflow: hidden;
+    height: 0%;
   }
 }
 

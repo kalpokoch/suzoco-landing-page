@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { MapPinHouse, Mails, PhoneIncoming } from 'lucide-react';
@@ -20,28 +22,44 @@ const ContactUs = () => {
   }
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    try{
-      const res = await fetch('http://localhost:5000/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+  e.preventDefault();
 
-      const result = await res.json();
-      if (res.ok) {
-        alert('message sent successfully');
-        setFormData({name: '', email: '', phone: '', inquiryType: 'General Inquiry', message: ''})
-      } else{
-        alert('Failed to send message');
-      }
-    } catch (err){
-      console.error(err);
-      alert('Error occured. Please try again later.');
+  // Simple front-end validation
+  const { name, email, phone, message } = formData;
+
+  if (!name.trim() || !email.trim() || !phone.trim() || !message.trim()) {
+    toast.error('⚠️ Please fill in all required fields.');
+    return;
+  }
+
+  try {
+    const res = await fetch('http://localhost:5000/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await res.json();
+    if (res.ok) {
+      toast.success('Message sent successfully!');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        inquiryType: 'General Inquiry',
+        message: '',
+      });
+    } else {
+      toast.error(result.message || '❌ Failed to send message.');
     }
-  };
+  } catch (err) {
+    console.error(err);
+    toast.error('Error occurred. Please try again later.');
+  }
+};
+
 
   return (
     <section id= 'contact-us' className="contact-section">
@@ -93,6 +111,9 @@ const ContactUs = () => {
             <button type="submit">Send Message</button>
           </form>
 
+          {/* Toast container here */}
+          <ToastContainer position='top-right' autoClose={4000} hideProgressBar={false} />
+
           <div className="contact-info">
             <h4>Get in Touch</h4>
             <p>Have questions about how Suzoco can help your business grow?</p>
@@ -116,10 +137,20 @@ const ContactUs = () => {
                 {/* <a href="#" className='social-icon'>
                   <FontAwesomeIcon icon={faFacebookF}/>
                 </a> */}
-                <a href="https://www.instagram.com/suzocoservices?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className='social-icon'>
+                <a
+                  href="https://www.instagram.com/suzocoservices?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  className='social-icon'
+                  target='_blank'
+                  rel="noopener noreferrer"
+                >
                   <FontAwesomeIcon icon={faInstagram}/>
                 </a>
-                <a href="https://www.linkedin.com/company/suzoco-services/posts/?feedView=all" className='social-icon'>
+                <a
+                  href="https://www.linkedin.com/company/suzoco-services/posts/?feedView=all"
+                  className='social-icon'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   <FontAwesomeIcon icon={faLinkedinIn}/>
                 </a>
               </div>
