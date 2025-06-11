@@ -27,7 +27,7 @@ function Hero() {
                     digital transformation services to create a holistic support system
                     for businesses.
                 </p>
-                <button>Explore Our Ecosystem</button>
+                {/* <button>Explore Our Ecosystem</button> */}
             </div>
 
             <div className="hero-right" data-aos="fade-up" data-aos-delay="200">

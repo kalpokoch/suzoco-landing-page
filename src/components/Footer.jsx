@@ -41,8 +41,8 @@ function Footer() {
           <div className="footer-column">
             <ul>
               <li>Kokrajhar, Assam, India</li>
-              <li>info@suzoco.com</li>
-              <li>+91 12345 67890</li>
+              <li><a href="mailto:contact@suzocoservices.in">contact@suzocoservices.in</a><br /></li>
+              <li>+91 81359 43334</li>
             </ul>
           </div>
         </div>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-.privacy-policy {
+.terms-of-service {
   font-family: 'Inter', sans-serif;
   color: #2D2D2D;
   max-width: 1200px;
@@ -9,7 +9,7 @@
   line-height: 1.6;
 }
 
-.privacy-policy h1 {
+.terms-of-service h1 {
   padding-top: 100px;
   font-size: 2rem;
   font-weight: 700;
@@ -17,13 +17,13 @@
   color: #111827;
 }
 
-.privacy-policy .effective-date {
+.terms-of-service .effective-date {
   font-style: italic;
   margin-bottom: 1.5rem;
   color: #4B5563;
 }
 
-.privacy-policy h2 {
+.terms-of-service h2 {
   font-size: 1.25rem;
   font-weight: 600;
   margin-top: 2rem;
@@ -31,19 +31,6 @@
   color: #111827;
 }
 
-.privacy-policy p {
+.terms-of-service p {
   margin-bottom: 1rem;
-}
-
-.privacy-policy ul {
-  list-style: disc inside;
-  margin: 0 0 1rem 1rem;
-}
-
-.privacy-policy li {
-  margin-bottom: 0.5rem;
-}
-
-.privacy-policy strong {
-  color: #1F2937;
 }

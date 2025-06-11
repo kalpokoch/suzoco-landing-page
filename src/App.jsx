@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -17,6 +18,16 @@ function App() {
   //     once: false});
   // },[]);
 
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 100); // slight delay ensures the DOM is ready
+      }
+    }
+  }, [location]);
   return (
     <div className="grid-bg">
       <Navbar />

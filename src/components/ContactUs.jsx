@@ -124,11 +124,11 @@ const ContactUs = () => {
               </div>
             <div className='contact-details'>
               <h5> <Mails/> Email:</h5>
-                  <p>info@suzoco.com</p>
+                  <p><a href="mailto:contact@suzocoservices.in">contact@suzocoservices.in</a><br /></p>
               </div>
             <div className='contact-details'>
               <h5> <PhoneIncoming/> Phone:</h5>
-                  <p>+91 12345 67890</p>
+                  <p>+91 81359 43334</p>
               </div>
 
             <div className="socials">
