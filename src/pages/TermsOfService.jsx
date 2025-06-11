@@ -73,9 +73,9 @@ const TermsOfService = () => (
       <h2>10. Contact Us</h2>
       <p>
         For any questions or legal concerns, contact:<br />
-        Email: [Insert Email]<br />
-        Phone: [Insert Phone]<br />
-        Address: [Insert Office Address]
+        Email: <a href="mailto:contact@suzocoservices.in">contact@suzocoservices.in</a><br />
+        Phone: +91 81359 43334<br />
+        Address: Kokrajhar, Assam, India
       </p>
     </section>
     <Footer />

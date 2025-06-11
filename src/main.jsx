@@ -11,7 +11,7 @@ import TermsOfService from './pages/TermsOfService';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/suzoco-landing-page">
+    <BrowserRouter basename="/suzoco-landing-page/">
       <ScrollToTop />
         <Routes>
           <Route path="/" element={<App />} />

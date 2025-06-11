@@ -15,7 +15,7 @@ const FadeInOnScroll = ({
   const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
-    if (isInView && scrollDirection === 'down') {
+    if (isInView ) {
       setHasAnimated(true);
     }
   }, [isInView, scrollDirection]);
