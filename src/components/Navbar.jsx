@@ -41,15 +41,15 @@ function Navbar() {
           <img src={logo} alt="Suzoco Logo" className="logo" />
         </Link>
         <div 
-          className={`nav-links ${menuOpen ? 'open' : ''}`} 
+          className={`nav-links-container ${menuOpen ? 'open' : ''}`} 
           onClick={handleMenuClick}
         >
-        <ul className='nav-list'>
-          <li><Link smooth to="/#about" onClick={() => setMenuOpen(false)}>About</Link></li>
-          <li><Link smooth to="/#verticals" onClick={() => setMenuOpen(false)}>Our Verticals</Link></li>
-          <li><Link smooth to="/#why-choose-us" onClick={() => setMenuOpen(false)}>Why Choose Us</Link></li>
-          <li className='contact-button'><Link smooth to="/#contact-us" onClick={() => setMenuOpen(false)}>Contact Us</Link></li>
-        </ul>  
+          <ul className='nav-links'>
+            <li><Link smooth to="/#about" onClick={() => setMenuOpen(false)}>About</Link></li>
+            <li><Link smooth to="/#verticals" onClick={() => setMenuOpen(false)}>Our Verticals</Link></li>
+            <li><Link smooth to="/#why-choose-us" onClick={() => setMenuOpen(false)}>Why Choose Us</Link></li>
+            <li className='contact-button'><Link smooth to="/#contact-us" onClick={() => setMenuOpen(false)}>Contact Us</Link></li>
+          </ul>  
         </div>
 
         <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={(e) => {
