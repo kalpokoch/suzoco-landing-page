@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import suzoco from '../assets/logo.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -51,9 +52,9 @@ function Footer() {
                 <p>© 2025 Suzoco Pvt Ltd. All rights reserved.</p>
             </div>
           <div className="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/terms-of-service">Terms of Service</Link>
+            <Link to="/cookies-policy">Cookie Policy</Link>
           </div>
         </div>
       </div>

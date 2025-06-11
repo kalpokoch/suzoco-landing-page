@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import logo from '../assets/logo.png';
 import './Navbar.css';
 
@@ -36,18 +37,19 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <a href="#" className="logo-container">
+        <Link to="/#" className="logo-container">
           <img src={logo} alt="Suzoco Logo" className="logo" />
-        </a>
-
+        </Link>
         <div 
           className={`nav-links ${menuOpen ? 'open' : ''}`} 
           onClick={handleMenuClick}
         >
-          <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-          <li><a href="#verticals" onClick={() => setMenuOpen(false)}>Our Verticals</a></li>
-          <li><a href="#why-choose-us" onClick={() => setMenuOpen(false)}>Why Choose Us</a></li>
-          <li><a href="#contact-us" className='contact-button' onClick={() => setMenuOpen(false)}>Contact Us</a></li>
+        <ul className='nav-list'>
+          <li><Link smooth to="/#about" onClick={() => setMenuOpen(false)}>About</Link></li>
+          <li><Link smooth to="/#verticals" onClick={() => setMenuOpen(false)}>Our Verticals</Link></li>
+          <li><Link smooth to="/#why-choose-us" onClick={() => setMenuOpen(false)}>Why Choose Us</Link></li>
+          <li className='contact-button'><Link smooth to="/#contact-us" onClick={() => setMenuOpen(false)}>Contact Us</Link></li>
+        </ul>  
         </div>
 
         <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={(e) => {

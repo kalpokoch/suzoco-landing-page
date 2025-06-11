@@ -1,5 +1,5 @@
 /* index.css */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,7 +28,7 @@ a {
   width: 100%;
   /* padding-left: 48px;
   padding-right: 48px; */  
-  padding: 2rem;
+  /* padding: 2rem; */
   box-sizing: border-box;
 }
 
